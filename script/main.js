@@ -6,7 +6,8 @@
       appliedClass;
 
       function changeElements() {
-        // I want to load dynamic content here
+        // i want to load dynamic content here
+        //debugger;
         let subImages = document.querySelector('.subImagesContainer');
         let objectIndex = dynamicContent[this.id];
 
@@ -14,15 +15,18 @@
         while (subImages.firstChild) {
           subImages.removeChild(subImages.firstChild);
         }
-
         // create an image element and add it to the page
-        objectIndex.images.forEach(function(element, index) {
+        objectIndex.images.forEach(function(element, index){
           let newSubImg = document.createElement('img');
 
           // add a css class
           newSubImg.classList.add('thumb');
           // add an image source
           newSubImg.src = "images/" + objectIndex.images[index];
+
+          // add some event handling
+          newSubImg.addEventListener('click', popLightbox, false);
+
           // append it to the container
           subImages.appendChild(newSubImg);
         });
@@ -37,6 +41,8 @@
         theSeasonText.firstChild.nodeValue = objectIndex.text;
 
         appliedClass = this.id;
+
+        console.log(this.id);
       }
 
       theImages.forEach(function(element, index) {
@@ -44,8 +50,20 @@
         element.addEventListener('click', changeElements, false);
       });
 
-      //initialize the app
-      theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
-      theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
-      theHeader.classList.add('spring');
-}) ();
+      function popLightbox() {
+        //debugger;
+
+        // turn on the lightbox
+        let lightbox = document.querySelector('.lightbox');
+        lightbox.style.display = 'block';
+      }
+
+      // initialize the app
+      // theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
+      // theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
+      // theHeader.classList.add('spring');
+      //
+      //document.querySelector('#spring').click();
+
+      changeElements.call(document.querySelector('#spring'));
+})();
