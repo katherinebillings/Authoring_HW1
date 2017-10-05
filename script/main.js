@@ -74,7 +74,15 @@
       }
 
       function closeLightbox() {
-        debugger;
+        //debugger;
+        // reset all the lightbox content, close the lightbox (not necessarily in that order)
+        document.body.style.overflow = "scroll";
+        let lightbox = document.querySelector('.lightbox');
+        lightbox.style.display = "none";
+        let lightboxImg = lightbox.querySelector('img');
+        let lightboxDesc = lightbox.querySelector('p');
+        lightboxImg.src = "";
+        lightboxDesc.innerHTML = "placeholder copy";
       }
       // initialize the app
       // theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;

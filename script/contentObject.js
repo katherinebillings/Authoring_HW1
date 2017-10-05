@@ -10,7 +10,7 @@ var dynamicContent = {
 			],
 
 			imageDescription : [
-				'This is some pretty flowers',
+				'This is some pretty butterflies',
 				'This is some kind of mutant chicken'
 			]
 		},
@@ -23,6 +23,11 @@ var dynamicContent = {
 			images : [
 				"summer_1.jpg",
 				"summer_2.jpg"
+			],
+
+			imageDescription : [
+				'This is some nice beach chairs',
+				'This is a sleeping puppy'
 			]
 		},
 
@@ -34,6 +39,11 @@ var dynamicContent = {
 			images : [
 				"autumn_1.jpg",
 				"autumn_2.jpg"
+			],
+
+			imageDescription : [
+				'This is is a trail',
+				'This are some pumpkins and vegetables'
 			]
 		},
 
@@ -45,6 +55,11 @@ var dynamicContent = {
 			images : [
 				"winter_1.jpg",
 				"winter_2.jpg"
+			],
+
+			imageDescription : [
+				'This is a forest',
+				'This is a snowman'
 			]
 		}
 	};
