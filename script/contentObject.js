@@ -6,7 +6,20 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
+			],
+
+			imageDescription : [
+				'This is some pretty butterflies',
+				'This is some kind of mutant chicken',
+				'This are some birds',
+				'This is a bunny',
+				'These are blossoms',
+				'This is a trail'
 			]
 		},
 
@@ -17,7 +30,20 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+			],
+
+			imageDescription : [
+				'This is some nice beach chairs',
+				'This is a sleeping puppy',
+				'This is a beach',
+				'This is a pier',
+				'This are some mountains',
+				'This are watermelon slices'
 			]
 		},
 
@@ -28,7 +54,20 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
+			],
+
+			imageDescription : [
+				'This is is a trail',
+				'This are some pumpkins and vegetables',
+				'These are some steps',
+				'This is a kitten',
+				'This is a landscape',
+				'This is a moose'
 			]
 		},
 
@@ -39,7 +78,20 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
+			],
+
+			imageDescription : [
+				'This is a forest',
+				'This is a snowman',
+				'These are skiers',
+				'These are doggies',
+				'This is a river',
+				'This is the aurora borealis'
 			]
 		}
 	};
